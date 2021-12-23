@@ -1,4 +1,4 @@
-@extends('base')
+@extends('dropshipperBase')
 @section('content')
 <!-- Header -->
     <!-- Header -->
