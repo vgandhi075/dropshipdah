@@ -1,0 +1,24 @@
+.flex{
+  display: flex;
+}
+.space-between{
+  justify-content: space-between;
+}
+.align-center{
+  align-items: center;
+}
+.small-text {
+  font-size: 14px;
+}
+.profile-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profile-name h2{
+  margin: 0;
+}
+.profile-type{
+  font-size: 12px;
+  margin-bottom: 10px;
+}
