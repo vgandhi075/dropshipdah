@@ -50,9 +50,43 @@
           <!-- Navigation -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="{{route('products')}}">
+              <a class="nav-link" href="{{route('showProducts')}}">
                 <i class="ni ni-box-2"></i>
                 <span class="nav-link-text">Products</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('showProducts')}}">
+                <i class="ni ni-box-2"></i>
+                <span class="nav-link-text">Catalogue</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#navbar-order" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-order">
+                <i class="ni ni-box-2"></i>
+                <span class="nav-link-text">Orders</span>
+              </a>
+              <div class="collapse show" id="navbar-order">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="../examples/pricing.html" class="nav-link">Ongoing Orders</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../examples/login.html" class="nav-link">Finished Orders</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../examples/register.html" class="nav-link">Return Requests</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../examples/lock.html" class="nav-link">Cancellation Requests</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('showProducts')}}">
+                <i class="ni ni-box-2"></i>
+                <span class="nav-link-text">Reviews</span>
               </a>
             </li>
           </ul>
