@@ -23,10 +23,10 @@
             <div class="card-body">
               <form action="" method="post">
              <div class="row flex align-center">
-                <div class="col-lg-1">
+                <div class="col-lg-2">
                     <img src="{{url('/img//theme/team-1.jpg')}}" alt="" class="profile-image">
                 </div>
-                <div class="col-lg-11">
+                <div class="col-lg-10">
                     <input type="file" name="profile-image" id="">
                 </div>
              </div>

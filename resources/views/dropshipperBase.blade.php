@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="{{ url('/css/app.css') }}" type="text/css">
 </head>
 
-<body onload="startTime()">
+<body>
   <!-- Sidenav -->
   <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
     <div class="scrollbar-inner">
@@ -57,13 +57,13 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{route('showProducts')}}">
-                <i class="ni ni-box-2"></i>
+                <i class="ni ni-book-bookmark"></i>
                 <span class="nav-link-text">Catalogue</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#navbar-order" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-order">
-                <i class="ni ni-box-2"></i>
+                <i class="ni ni-bullet-list-67"></i>
                 <span class="nav-link-text">Orders</span>
               </a>
               <div class="collapse show" id="navbar-order">
@@ -85,7 +85,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{route('showProducts')}}">
-                <i class="ni ni-box-2"></i>
+                <i class="fa fa-star"></i>
                 <span class="nav-link-text">Reviews</span>
               </a>
             </li>
@@ -111,6 +111,11 @@
                   <i class="sidenav-toggler-line"></i>
                 </div>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ni ni-cart"></i>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">

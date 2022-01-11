@@ -22,10 +22,10 @@
           <div class="card">
             <div class="card-body">
              <div class="row">
-                <div class="col-lg-1">
+                <div class="col-lg-2">
                     <img src="{{url('/img//theme/team-1.jpg')}}" alt="" class="profile-image">
                 </div>
-                <div class="col-lg-11">
+                <div class="col-lg-10">
                     <div class="profile-name"><h2>William Antony</h2></div>
                     <div class="profile-type">Dropshipper</div>
                     <div><a href="{{route('dropshipperShowEditProfile')}}" class="btn btn-primary btn-sm">Edit Profile</a></div>

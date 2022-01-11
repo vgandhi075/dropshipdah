@@ -1,24 +1,35 @@
-.flex{
+.flex {
   display: flex;
 }
-.space-between{
+
+.login-logo {
+  width: 300px;
+  height: 45px;
+}
+
+.space-between {
   justify-content: space-between;
 }
-.align-center{
+
+.align-center {
   align-items: center;
 }
+
 .small-text {
   font-size: 14px;
 }
-.profile-image{
-  width: 100px;
-  height: 100px;
+
+.profile-image {
+  width: 100%;
+  height: auto;
   border-radius: 50%;
 }
-.profile-name h2{
+
+.profile-name h2 {
   margin: 0;
 }
-.profile-type{
+
+.profile-type {
   font-size: 12px;
   margin-bottom: 10px;
 }
