@@ -69,19 +69,19 @@
               <div class="collapse show" id="navbar-order">
                 <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                        <a href="../examples/pricing.html" class="nav-link">New Orders</a>
+                        <a href="{{route('supplierNewOrders')}}" class="nav-link">New Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../examples/pricing.html" class="nav-link">Ongoing Orders</a>
+                        <a href="{{route('supplierOngoingOrders')}}" class="nav-link">Ongoing Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../examples/login.html" class="nav-link">Finished Orders</a>
+                        <a href="{{route('supplierFinishedOrders')}}" class="nav-link">Finished Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../examples/register.html" class="nav-link">Return Requests</a>
+                        <a href="{{route('supplierReturnRequests')}}" class="nav-link">Return Requests</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../examples/lock.html" class="nav-link">Cancellation Requests</a>
+                        <a href="{{route('supplierCancellationRequests')}}" class="nav-link">Cancellation Requests</a>
                     </li>
                 </ul>
               </div>
@@ -259,6 +259,7 @@
         </div>
       </div>
     </nav>
+    {{-- isi ada disini --}}
     @yield('content')
   </div>
   </div>

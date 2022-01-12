@@ -39,7 +39,7 @@
                 </div>
                 <div class="form-group">
                   <label for="phone-number" class="form-control-label">Phone Number</label>
-                  <input type="number" name="phone-number" class="form-control" value="081362625959">
+                  <input type="number" name="phone-number" class="form-control" value="087711031166">
                 </div>
                 <div class="form-group">
                   <label for="ktp-number" class="form-control-label">KTP Number</label>
@@ -83,11 +83,11 @@
                 </div>
                 <div class="form-group">
                   <label for="bank-account-number" class="form-control-label">Bank Account Number</label>
-                  <input type="number" name="bank-account-number" class="form-control" value="0254855692">
+                  <input type="number" name="bank-account-number" class="form-control" value="8720309322">
                 </div>
                 <div class="form-group">
                   <label for="bank-account-name" class="form-control-label">Bank Account Name</label>
-                  <input type="text" name="bank-account-name" class="form-control" value="WILLIAM ANTONY">
+                  <input type="text" name="bank-account-name" class="form-control" value="VINCENTIUS GANDHI DJATMIKO">
                 </div>
              </div>
              <div class="flex space-between">
