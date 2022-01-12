@@ -42,4 +42,8 @@ class SupplierController extends Controller
     public function showCancellationRequests(){
         return view('supplier.orders.cancellationRequests');
     }
+
+    public function showProducts(){
+        return view('supplier.supplierProducts');
+    }
 }

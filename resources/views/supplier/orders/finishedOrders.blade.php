@@ -11,7 +11,7 @@
               <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                 <li class="breadcrumb-item"><a href="datatables.html#"><i class="fas fa-home"></i></a></li>
                 <li class="breadcrumb-item"><a href="datatables.html#">Orders</a></li>
-                <li class="breadcrumb-item active" aria-current="page">New Orders</li>
+                <li class="breadcrumb-item active" aria-current="page">Finished Orders</li>
               </ol>
             </nav>
           </div>
@@ -27,7 +27,7 @@
             <div class="card">
                 <!-- Card header -->
                 <div class="card-header">
-                    <h3 class="mb-0">New Orders</h3>
+                    <h3 class="mb-0">Finished Orders</h3>
                     <p class="text-sm mb-0">
                     This is an exmaple of datatable using the well known datatables.net plugin. This is a minimal setup in order to get started fast.
                     </p>

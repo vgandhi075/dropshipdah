@@ -35,3 +35,4 @@ Route::get('/supplier/ongoing_order', [SupplierController::class, 'showOngoingOr
 Route::get('/supplier/finished_order', [SupplierController::class, 'showFinishedOrders'])->name('supplierFinishedOrders');
 Route::get('/supplier/return_requests', [SupplierController::class, 'showReturnRequests'])->name('supplierReturnRequests');
 Route::get('/supplier/cancellation_requests', [SupplierController::class, 'showCancellationRequests'])->name('supplierCancellationRequests');
+Route::get('/supplier/products', [SupplierController::class, 'showProducts'])->name('supplierShowProducts');

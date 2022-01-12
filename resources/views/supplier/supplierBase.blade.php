@@ -56,7 +56,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('showProducts')}}">
+              <a class="nav-link" href="{{route('supplierShowProducts')}}">
                 <i class="ni ni-box-2"></i>
                 <span class="nav-link-text">Products</span>
               </a>
