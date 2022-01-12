@@ -36,7 +36,7 @@
             </div>
           </form>
           <div class="row">
-            <div class="col-2">
+            <div class="col-md-2 col-sm-12">
               <h3 class="text-muted"><i class="fa fa-filter"></i> FILTER</h3>
               <hr class="my-3">
               <h6 class="heading-small text-muted mb-2">Location</h6>
@@ -86,24 +86,24 @@
               <hr class="my-3">
               <h6 class="heading-small text-muted mb-2">Price</h6>
               <div class="row">
-                <div class="col-5">
+                <div class="col-md-12">
                   <div class="form-group">
                     <input type="number" name="min" id="min" class="form-control" placeholder="Min">
                   </div>
                 </div>
-                <div class="col-2">
+                <!-- <div class="col-md-">
                   <div id="line-price"></div>
-                </div>
-                <div class="col-5">
+                </div> -->
+                <div class="col-md-12">
                   <div class="form-group">
                     <input type="number" name="max" id="max" class="form-control" placeholder="Max">
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-10">
+            <div class="col-md-10 col-sm-12">
               <div class="row">
-                <div class="col-3">
+                <div class="col-md-3 col-sm-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -126,7 +126,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -149,7 +149,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -172,7 +172,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -195,7 +195,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -217,7 +217,7 @@
                       </div>
                     </div>
                   </a>
-                </div><div class="col-3">
+                </div><div class="col-md-3 col-sm-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -239,7 +239,7 @@
                       </div>
                     </div>
                   </a>
-                </div><div class="col-3">
+                </div><div class="col-md-3 col-sm-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -261,7 +261,7 @@
                       </div>
                     </div>
                   </a>
-                </div><div class="col-3">
+                </div><div class="col-md-3 col-sm-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">

@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [DropshipperController::class, 'showIndex'])->name('dropshipperShowIndex');
 Route::get('/dropshipper/', [DropshipperController::class, 'showIndex'])->name('dropshipperShowIndex');
 Route::get('/dropshipper/login', [DropshipperController::class, 'showLogin'])->name('dropshipperShowLogin');
 Route::get('/dropshipper/login', [DropshipperController::class, 'showRegister'])->name('dropshipperShowRegister');
