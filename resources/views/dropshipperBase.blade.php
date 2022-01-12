@@ -30,7 +30,7 @@
     <div class="scrollbar-inner">
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
-        <a class="navbar-brand" href="{{url('/')}}">
+        <a class="navbar-brand" href="{{route('dropshipperShowIndex')}}">
           <img src="{{ url('/img/brand/logo.png') }}" alt="" srcset="">
         </a>
         <div class="ml-auto">
@@ -50,13 +50,13 @@
           <!-- Navigation -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="{{route('showProducts')}}">
+              <a class="nav-link" href="{{route('dropshipperShowProducts')}}">
                 <i class="ni ni-box-2"></i>
                 <span class="nav-link-text">Products</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('showProducts')}}">
+              <a class="nav-link" href="#">
                 <i class="ni ni-book-bookmark"></i>
                 <span class="nav-link-text">Catalogue</span>
               </a>
@@ -84,7 +84,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('showProducts')}}">
+              <a class="nav-link" href="#">
                 <i class="fa fa-star"></i>
                 <span class="nav-link-text">Reviews</span>
               </a>
