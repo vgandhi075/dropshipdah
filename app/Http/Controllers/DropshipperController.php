@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class DropshipperController extends Controller
 {
+    public function showIndex(){
+        return redirect()->route('dropshipperShowProducts');
+    }
     public function showLogin(){
         return view('dropshipperLogin');
     }
