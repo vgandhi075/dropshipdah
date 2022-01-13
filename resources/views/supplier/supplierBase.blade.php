@@ -87,7 +87,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('showProducts')}}">
+              <a class="nav-link" href="">
                 <i class="ni ni-box-2"></i>
                 <span class="nav-link-text">Reviews</span>
               </a>
