@@ -16,16 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [DropshipperController::class, 'showIndex'])->name('dropshipperShowIndex');
+// Dropshipper
 Route::get('/dropshipper/', [DropshipperController::class, 'showIndex'])->name('dropshipperShowIndex');
 Route::get('/dropshipper/login', [DropshipperController::class, 'showLogin'])->name('dropshipperShowLogin');
 Route::get('/dropshipper/login', [DropshipperController::class, 'showRegister'])->name('dropshipperShowRegister');
 Route::get('/dropshipper/profile', [DropshipperController::class, 'showProfile'])->name('dropshipperShowProfile');
 Route::get('/dropshipper/edit-profile', [DropshipperController::class, 'showEditProfile'])->name('dropshipperShowEditProfile');
-
 Route::get('/dropshipper/products', [ProductController::class, 'showProducts'])->name('dropshipperShowProducts');
-
-Route::get('/products', [ProductController::class, 'showProducts'])->name('showProducts');
 
 // Supplier
 Route::get('/supplier', [SupplierController::class, 'index'])->name('supplierIndex');
