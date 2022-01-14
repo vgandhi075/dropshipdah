@@ -296,7 +296,9 @@
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
       });
-      
+      $("#filter-button").on("click", function(){
+        $("#filter-section").toggle();
+      });
     });
   </script>
   </head>

@@ -21,22 +21,25 @@
         <div class="card-body">
           <form action="" method="get">
             <div class="row">
-              <div class="col-md-10 col-sm-12">
+              <div class="col-lg-10 col-sm-12">
                 <div class="form-group">
                   <input type="text" name="search" id="search" class="form-control" placeholder="Find products to sell...">
                 </div>
               </div>
-              <div class="col-md-2 col-sm-12">
+              <div class="col col-sm-6 col-xs-6" id="filter-container">
+                <div class="form-group">
+                  <a class="btn btn-secondary btn-block" id="filter-button">Filter</a>
+                </div>
+              </div>
+              <div class="col col-lg-2 col-sm-6 col-xs-6">
                 <div class="form-group">
                   <button type="submit" class="btn btn-primary btn-block">Search</button>
                 </div>
-
               </div>
-
             </div>
           </form>
           <div class="row">
-            <div class="col-md-2 col-sm-12">
+            <div class="col-lg-2 col-sm-12" id="filter-section">
               <h3 class="text-muted"><i class="fa fa-filter"></i> FILTER</h3>
               <hr class="my-3">
               <h6 class="heading-small text-muted mb-2">Location</h6>
@@ -101,9 +104,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-10 col-sm-12">
+            <div class="col-lg-10 col-sm-12">
               <div class="row">
-                <div class="col-md-3 col-sm-6">
+                <div class="col col-lg-3 col-md-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -126,7 +129,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col col-lg-3 col-md-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -149,7 +152,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col col-lg-3 col-md-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -172,7 +175,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col col-lg-3 col-md-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -195,7 +198,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col col-lg-3 col-md-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -217,7 +220,8 @@
                       </div>
                     </div>
                   </a>
-                </div><div class="col-md-3 col-sm-6">
+                </div>
+                <div class="col col-lg-3 col-md-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -239,7 +243,8 @@
                       </div>
                     </div>
                   </a>
-                </div><div class="col-md-3 col-sm-6">
+                </div>
+                <div class="col col-lg-3 col-md-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
@@ -261,7 +266,8 @@
                       </div>
                     </div>
                   </a>
-                </div><div class="col-md-3 col-sm-6">
+                </div>
+                <div class="col col-lg-3 col-md-6">
                   <a href="#">
                     <div class="product-box">
                       <div class="product-image">
