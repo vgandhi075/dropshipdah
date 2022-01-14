@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CatalogueController;
 use App\Http\Controllers\DropshipperController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SupplierController;
@@ -23,6 +24,7 @@ Route::get('/dropshipper/login', [DropshipperController::class, 'showRegister'])
 Route::get('/dropshipper/profile', [DropshipperController::class, 'showProfile'])->name('dropshipperShowProfile');
 Route::get('/dropshipper/edit-profile', [DropshipperController::class, 'showEditProfile'])->name('dropshipperShowEditProfile');
 Route::get('/dropshipper/products', [ProductController::class, 'showProducts'])->name('dropshipperShowProducts');
+Route::get('/dropshipper/catalogue', [CatalogueController::class, 'showCatalogue'])->name('dropshipperShowCatalogue');
 
 // Supplier
 Route::get('/supplier', [SupplierController::class, 'index'])->name('supplierIndex');
