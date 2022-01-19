@@ -58,9 +58,14 @@
   margin-bottom: 20px;
 }
 
+.profile-info {
+  text-align: center;
+  width: 100%;
+}
+
 .product-name {
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 700;
   padding-top: 5px;
   color: #525f7f;
 }
@@ -91,6 +96,7 @@
   margin-top: 10px;
   font-size: 12px;
   width: 100%;
+  padding: 10px;
 }
 
 @media screen and (max-width: 1919px) {
