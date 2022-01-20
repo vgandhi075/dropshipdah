@@ -7,7 +7,6 @@
     <div class="header-body">
       <div class="row align-items-center py-4">
         <div class="col-lg-6 col-7">
-          <h6 class="h2 text-white d-inline-block mb-0">Products</h6>
         </div>
       </div>
     </div>
@@ -19,6 +18,21 @@
     <div class="col">
       <div class="card">
         <div class="card-body">
+          <div class="card bg-gradient-primary">
+            <!-- Card body -->
+            <div class="card-body">
+              <div class="row justify-content-between align-items-center">
+                <div class="col">
+                  <div class="h1 text-white">Andi Store</div>
+                  <div class="h5 surtitle text-light">DKI Jakarta</div>
+                  <div class="mt-4"><a class="btn btn-secondary"><i class="ni ni-chat-round"></i> Chat</a></div>
+                </div>
+                <div class="col-auto">
+                  <img class="avatar" src="{{url('img/icons/common/silver-medal.png')}}" alt="Image placeholder" />
+                </div>
+              </div>
+            </div>
+          </div>
           <form action="" method="get">
             <div class="row">
               <div class="col-lg-10 col-sm-12">
@@ -107,7 +121,7 @@
             <div class="col-lg-10 col-sm-12">
               <div class="row">
                 <div class="col col-lg-3 col-md-6">
-                  <a href="{{route('dropshipperShowDetailProducts')}}">
+                  <a href="#">
                     <div class="product-box">
                       <div class="product-image">
                         <img src="{{ url('/img/theme/product.jpg') }}" alt="">
