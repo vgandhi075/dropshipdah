@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Dropshipper jojo
+// Dropshipper
 Route::get('/dropshipper/', [DropshipperController::class, 'showIndex'])->name('dropshipperShowIndex');
 Route::get('/dropshipper/login', [DropshipperController::class, 'showLogin'])->name('dropshipperShowLogin');
 Route::get('/dropshipper/login', [DropshipperController::class, 'showRegister'])->name('dropshipperShowRegister');
@@ -36,3 +36,10 @@ Route::get('/supplier/return_requests', [SupplierController::class, 'showReturnR
 Route::get('/supplier/cancellation_requests', [SupplierController::class, 'showCancellationRequests'])->name('supplierCancellationRequests');
 Route::get('/supplier/products', [SupplierController::class, 'showProducts'])->name('supplierShowProducts');
 
+// Admin
+Route::get('/admin', [AdminController::class, 'showIndex'])->name('adminShowIndex');
+// Route::get('/dropshipper/login', [DropshipperController::class, 'showLogin'])->name('dropshipperShowLogin');
+// Route::get('/dropshipper/login', [DropshipperController::class, 'showRegister'])->name('dropshipperShowRegister');
+// Route::get('/dropshipper/profile', [DropshipperController::class, 'showProfile'])->name('dropshipperShowProfile');
+// Route::get('/dropshipper/edit-profile', [DropshipperController::class, 'showEditProfile'])->name('dropshipperShowEditProfile');
+// Route::get('/dropshipper/products', [ProductController::class, 'showProducts'])->name('dropshipperShowProducts');
