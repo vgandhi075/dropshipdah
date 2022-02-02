@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DropshipperController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SupplierController;
@@ -37,9 +38,9 @@ Route::get('/supplier/cancellation_requests', [SupplierController::class, 'showC
 Route::get('/supplier/products', [SupplierController::class, 'showProducts'])->name('supplierShowProducts');
 
 // Admin
-Route::get('/admin', [AdminController::class, 'showIndex'])->name('adminShowIndex');
+Route::get('/admin/', [AdminController::class, 'showIndex'])->name('adminShowIndex');
 // Route::get('/dropshipper/login', [DropshipperController::class, 'showLogin'])->name('dropshipperShowLogin');
 // Route::get('/dropshipper/login', [DropshipperController::class, 'showRegister'])->name('dropshipperShowRegister');
 // Route::get('/dropshipper/profile', [DropshipperController::class, 'showProfile'])->name('dropshipperShowProfile');
 // Route::get('/dropshipper/edit-profile', [DropshipperController::class, 'showEditProfile'])->name('dropshipperShowEditProfile');
-// Route::get('/dropshipper/products', [ProductController::class, 'showProducts'])->name('dropshipperShowProducts');
+Route::get('/admin/users', [AdminController::class, 'showUsers'])->name('adminShowUsers');

@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     // public function showIndex(){
-    //     return redirect()->route('dropshipperShowProducts');
+    //     return redirect()->route('admin.adminShowUsers');
     // }
-    public function showLogin(){
-        return view('adminLogin');
+    public function showIndex(){
+        return view('admin.adminIndex');
     }
-    public function showRegister(){
-        return view('adminLogin');
+    public function showLogin(){
+        return view('admin.adminLogin');
     }
     // public function showProfile(){
     //     return view('dropshipperProfile');
