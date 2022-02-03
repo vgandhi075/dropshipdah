@@ -39,8 +39,9 @@ Route::get('/supplier/products', [SupplierController::class, 'showProducts'])->n
 
 // Admin
 Route::get('/admin/', [AdminController::class, 'showIndex'])->name('adminShowIndex');
-// Route::get('/dropshipper/login', [DropshipperController::class, 'showLogin'])->name('dropshipperShowLogin');
-// Route::get('/dropshipper/login', [DropshipperController::class, 'showRegister'])->name('dropshipperShowRegister');
-// Route::get('/dropshipper/profile', [DropshipperController::class, 'showProfile'])->name('dropshipperShowProfile');
-// Route::get('/dropshipper/edit-profile', [DropshipperController::class, 'showEditProfile'])->name('dropshipperShowEditProfile');
+Route::get('/admin/new_order', [AdminController::class, 'showNewOrders'])->name('adminNewOrders');
+Route::get('/admin/ongoing_order', [AdminController::class, 'showOngoingOrders'])->name('adminOngoingOrders');
+Route::get('/admin/finished_order', [AdminController::class, 'showFinishedOrders'])->name('adminFinishedOrders');
+Route::get('/admin/return_requests', [AdminController::class, 'showReturnRequests'])->name('adminReturnRequests');
+Route::get('/admin/cancellation_requests', [AdminController::class, 'showCancellationRequests'])->name('adminCancellationRequests');
 Route::get('/admin/users', [AdminController::class, 'showUsers'])->name('adminShowUsers');
