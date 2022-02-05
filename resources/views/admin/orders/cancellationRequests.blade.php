@@ -39,8 +39,9 @@
                         <th>Number</th>
                         <th>OrderId</th>
                         <th>Date & Time</th>
-                        <th>Dropshipper</th>
-                        <th>Amount</th>
+                        <th>Requested by</th>
+                        <th>Status</th>
+                        <th>Refund Status</th>
                         <th>Actions</th>
                         </tr>
                     </thead>
@@ -50,13 +51,30 @@
                                 <td>{{ $i }}</td>
                                 <td>ORD{{ $i }}</td>
                                 <td>2022-01-13 12:02:11</td>
-                                <td>William</td>
-                                <td>Rp 30.000</td>
+                                @if($i == 2)
+                                    <td>Dropshipper - William</td>
+                                @else
+                                    <td>Supplier - Toko Bagus</td>
+                                @endif
+                                @if($i == 1)
+                                    <td>Waiting for approval</td>
+                                @elseif($i == 2)
+                                    <td>Request rejected</td>
+                                @else
+                                    <td>Cancelled by supplier</td>
+                                @endif
+                                @if($i == 1 || $i == 2)
+                                    <td>No Refund</td>
+                                @elseif($i == 3)
+                                    <td>Refund successfully</td>
+                                @else
+                                    <td>Waiting for refund</td>
+                                @endif
                                 <td class="text-center">
                                     <div class="text-center">
                                         <a href="datatables.html#" class="btn btn-sm btn-default">Details</a>
-                                        <a href="datatables.html#" class="btn btn-sm btn-success">Accept</a>
-                                        <a href="datatables.html#" class="btn btn-sm btn-warning">Reject</a>
+                                        <!-- <a href="datatables.html#" class="btn btn-sm btn-success">Accept</a>
+                                        <a href="datatables.html#" class="btn btn-sm btn-warning">Reject</a> -->
                                     </div>
                                 </td>
                             </tr>

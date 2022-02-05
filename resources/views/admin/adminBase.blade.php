@@ -6,7 +6,7 @@
   <meta name="description" content="Dropshipdah">
   <meta name="author" content="Adhika Nandatio, Vincentius Gandhi, William Antony">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>Dropshipper | Dropshipdah</title>
+  <title>Admin | Dropshipdah</title>
   <!-- Favicon -->
   <link rel="icon" href="{{ url('/img/brand/favicon.png') }}" type="image/x-icon">
   <!-- Fonts -->
@@ -63,16 +63,16 @@
               <div class="collapse show" id="navbar-order">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="../examples/pricing.html" class="nav-link">Ongoing Orders</a>
+                    <a href="{{route('adminOngoingOrders')}}" class="nav-link">Ongoing Orders</a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/login.html" class="nav-link">Finished Orders</a>
+                    <a href="{{route('adminFinishedOrders')}}" class="nav-link">Finished Orders</a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/register.html" class="nav-link">Return Requests</a>
+                    <a href="{{route('adminReturnRequests')}}" class="nav-link">Return Requests</a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/lock.html" class="nav-link">Cancellation Requests</a>
+                    <a href="{{route('adminCancellationRequests')}}" class="nav-link">Cancellation Requests</a>
                   </li>
                 </ul>
               </div>

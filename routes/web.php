@@ -39,7 +39,6 @@ Route::get('/supplier/products', [SupplierController::class, 'showProducts'])->n
 
 // Admin
 Route::get('/admin/', [AdminController::class, 'showIndex'])->name('adminShowIndex');
-Route::get('/admin/new_order', [AdminController::class, 'showNewOrders'])->name('adminNewOrders');
 Route::get('/admin/ongoing_order', [AdminController::class, 'showOngoingOrders'])->name('adminOngoingOrders');
 Route::get('/admin/finished_order', [AdminController::class, 'showFinishedOrders'])->name('adminFinishedOrders');
 Route::get('/admin/return_requests', [AdminController::class, 'showReturnRequests'])->name('adminReturnRequests');

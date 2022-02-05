@@ -39,8 +39,11 @@
                         <th>Number</th>
                         <th>OrderId</th>
                         <th>Date & Time</th>
+                        <th>Supplier</th>
                         <th>Dropshipper</th>
                         <th>Amount</th>
+                        <th>Status</th>
+                        <th>Supplier Payout</th>
                         <th>Actions</th>
                         </tr>
                     </thead>
@@ -50,13 +53,16 @@
                                 <td>{{ $i }}</td>
                                 <td>ORD{{ $i }}</td>
                                 <td>2022-01-13 12:02:11</td>
+                                <td>Toko Bagus</td>
                                 <td>William</td>
-                                <td>Rp 30.000</td>
+                                <td>Rp 90.000</td>
+                                <td>Order Cancelled by Supplier</td>
+                                <td>Unpaid</td>
                                 <td class="text-center">
                                     <div class="text-center">
                                         <a href="datatables.html#" class="btn btn-sm btn-default">Details</a>
-                                        <a href="datatables.html#" class="btn btn-sm btn-success">Accept</a>
-                                        <a href="datatables.html#" class="btn btn-sm btn-warning">Reject</a>
+                                        <!-- <a href="datatables.html#" class="btn btn-sm btn-success">Accept</a>
+                                        <a href="datatables.html#" class="btn btn-sm btn-warning">Reject</a> -->
                                     </div>
                                 </td>
                             </tr>
