@@ -12,6 +12,9 @@ class AdminController extends Controller
     public function showLogin(){
         return view('admin.adminLogin');
     }
+    public function showUsers(){
+        return view('admin.adminShowUsers');
+    }
     public function showOngoingOrders(){
         return view('admin.orders.ongoingOrders');
     }
