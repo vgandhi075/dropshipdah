@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CatalogueController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DropshipperController;
 use App\Http\Controllers\ProductController;
@@ -22,8 +23,11 @@ Route::get('/dropshipper/', [DropshipperController::class, 'showIndex'])->name('
 Route::get('/dropshipper/login', [DropshipperController::class, 'showLogin'])->name('dropshipperShowLogin');
 Route::get('/dropshipper/login', [DropshipperController::class, 'showRegister'])->name('dropshipperShowRegister');
 Route::get('/dropshipper/profile', [DropshipperController::class, 'showProfile'])->name('dropshipperShowProfile');
-Route::get('/dropshipper/edit-profile', [DropshipperController::class, 'showEditProfile'])->name('dropshipperShowEditProfile');
+Route::get('/dropshipper/edit_profile', [DropshipperController::class, 'showEditProfile'])->name('dropshipperShowEditProfile');
 Route::get('/dropshipper/products', [ProductController::class, 'showProducts'])->name('dropshipperShowProducts');
+Route::get('/dropshipper/catalogue', [CatalogueController::class, 'showCatalogue'])->name('dropshipperShowCatalogue');
+Route::get('/dropshipper/supplier_products', [DropshipperController::class, 'showSupplierProducts'])->name('dropshipperShowSupplierProducts');
+Route::get('/dropshipper/products/detail', [DropshipperController::class, 'showDetailProducts'])->name('dropshipperShowDetailProducts');
 
 // Supplier
 Route::get('/supplier', [SupplierController::class, 'index'])->name('supplierIndex');

@@ -56,7 +56,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{{route('dropshipperShowCatalogue')}}">
                 <i class="ni ni-book-bookmark"></i>
                 <span class="nav-link-text">Catalogue</span>
               </a>
@@ -296,7 +296,9 @@
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
       });
-      
+      $("#filter-button").on("click", function(){
+        $("#filter-section").toggle();
+      });
     });
   </script>
   </head>
