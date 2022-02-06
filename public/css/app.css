@@ -99,6 +99,40 @@
   padding: 10px;
 }
 
+.product-detail-images img {
+  object-fit: cover;
+}
+
+.product-detail-info {
+  font-size: 14px;
+}
+
+.product-detail-price {
+  font-size: 22px;
+  color: #fb6340;
+  padding: 20px 0;
+}
+
+#qty {
+  width: 100px;
+}
+
+.product-detail-stock {
+  line-height: 50px;
+}
+
+.product-detail-information .form-group {
+  margin: 0;
+}
+
+.product-detail-button {
+  padding: 20px 0 0;
+}
+
+.gold {
+  color: #FFD700;
+}
+
 @media screen and (max-width: 1919px) {
   .product-image img {
     height: 140px;
