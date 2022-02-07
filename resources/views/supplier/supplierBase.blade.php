@@ -51,19 +51,19 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="{{route('supplierIndex')}}">
-                <i class="ni ni-box-2"></i>
+                <i class="ni ni-ui-04"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{route('supplierShowProducts')}}">
-                <i class="ni ni-box-2"></i>
+                <i class="ni ni-bag-17"></i>
                 <span class="nav-link-text">Products</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#navbar-order" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-order">
-                <i class="ni ni-box-2"></i>
+                <i class="ni ni-cart"></i>
                 <span class="nav-link-text">Orders</span>
               </a>
               <div class="collapse show" id="navbar-order">
@@ -87,8 +87,8 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">
-                <i class="ni ni-box-2"></i>
+              <a class="nav-link" href="{{route('showProducts')}}">
+                <i class="ni ni-tag"></i>
                 <span class="nav-link-text">Reviews</span>
               </a>
             </li>
