@@ -55,8 +55,6 @@
                                 <td class="text-center">
                                     <div class="text-center">
                                         <a href="datatables.html#" class="btn btn-sm btn-default">Details</a>
-                                        <a href="datatables.html#" class="btn btn-sm btn-success">Accept</a>
-                                        <a href="datatables.html#" class="btn btn-sm btn-warning">Reject</a>
                                     </div>
                                 </td>
                             </tr>
