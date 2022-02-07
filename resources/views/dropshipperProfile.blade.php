@@ -21,16 +21,13 @@
         <div class="col">
           <div class="card">
             <div class="card-body">
-             <div class="row">
-                <div class="col-lg-1">
+              <div class="profile-info">
                     <img src="{{url('/img//theme/team-1.jpg')}}" alt="" class="profile-image">
-                </div>
-                <div class="col-lg-11">
                     <div class="profile-name"><h2>William Antony</h2></div>
                     <div class="profile-type">Dropshipper</div>
                     <div><a href="{{route('dropshipperShowEditProfile')}}" class="btn btn-primary btn-sm">Edit Profile</a></div>
-                </div>
-             </div>
+
+              </div>
              <hr class="my-4">
              <h6 class="heading-small text-muted mb-4">General Information</h6>
              <div class="pl-lg-4">

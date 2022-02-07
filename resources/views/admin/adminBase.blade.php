@@ -6,7 +6,7 @@
   <meta name="description" content="Dropshipdah">
   <meta name="author" content="Adhika Nandatio, Vincentius Gandhi, William Antony">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>Dropshipper | Dropshipdah</title>
+  <title>Admin | Dropshipdah</title>
   <!-- Favicon -->
   <link rel="icon" href="{{ url('/img/brand/favicon.png') }}" type="image/x-icon">
   <!-- Fonts -->
@@ -50,15 +50,9 @@
           <!-- Navigation -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="{{route('dropshipperShowProducts')}}">
+              <a class="nav-link" href="{{route('adminShowUsers')}}">
                 <i class="ni ni-box-2"></i>
-                <span class="nav-link-text">Products</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{route('dropshipperShowCatalogue')}}">
-                <i class="ni ni-book-bookmark"></i>
-                <span class="nav-link-text">Catalogue</span>
+                <span class="nav-link-text">Users</span>
               </a>
             </li>
             <li class="nav-item">
@@ -69,16 +63,16 @@
               <div class="collapse show" id="navbar-order">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="../examples/pricing.html" class="nav-link">Ongoing Orders</a>
+                    <a href="{{route('adminOngoingOrders')}}" class="nav-link">Ongoing Orders</a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/login.html" class="nav-link">Finished Orders</a>
+                    <a href="{{route('adminFinishedOrders')}}" class="nav-link">Finished Orders</a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/register.html" class="nav-link">Return Requests</a>
+                    <a href="{{route('adminReturnRequests')}}" class="nav-link">Return Requests</a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/lock.html" class="nav-link">Cancellation Requests</a>
+                    <a href="{{route('adminCancellationRequests')}}" class="nav-link">Cancellation Requests</a>
                   </li>
                 </ul>
               </div>
@@ -242,7 +236,7 @@
                     <img alt="Image placeholder" src="{{url('/img/theme/team-1.jpg')}}">
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
-                    <div class="mb-0 text-sm  font-weight-bold">William Antony</div>
+                    <div class="mb-0 text-sm  font-weight-bold">Adhika Nandatio</div>
                   </div>
                 </div>
               </a>
@@ -296,9 +290,7 @@
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
       });
-      $("#filter-button").on("click", function(){
-        $("#filter-section").toggle();
-      });
+      
     });
   </script>
   </head>

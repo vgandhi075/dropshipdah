@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CatalogueController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DropshipperController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
@@ -17,14 +19,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dropshipperIndex');
-});
+// Dropshipper
+Route::get('/dropshipper/', [DropshipperController::class, 'showIndex'])->name('dropshipperShowIndex');
 Route::get('/dropshipper/login', [DropshipperController::class, 'showLogin'])->name('dropshipperShowLogin');
 Route::get('/dropshipper/login', [DropshipperController::class, 'showRegister'])->name('dropshipperShowRegister');
 Route::get('/dropshipper/profile', [DropshipperController::class, 'showProfile'])->name('dropshipperShowProfile');
-Route::get('/dropshipper/edit-profile', [DropshipperController::class, 'showEditProfile'])->name('dropshipperShowEditProfile');
-Route::get('/products', [ProductController::class, 'showProducts'])->name('showProducts');
+Route::get('/dropshipper/edit_profile', [DropshipperController::class, 'showEditProfile'])->name('dropshipperShowEditProfile');
+Route::get('/dropshipper/products', [ProductController::class, 'showProducts'])->name('dropshipperShowProducts');
+Route::get('/dropshipper/catalogue', [CatalogueController::class, 'showCatalogue'])->name('dropshipperShowCatalogue');
+Route::get('/dropshipper/supplier_products', [DropshipperController::class, 'showSupplierProducts'])->name('dropshipperShowSupplierProducts');
+Route::get('/dropshipper/products/detail', [DropshipperController::class, 'showDetailProducts'])->name('dropshipperShowDetailProducts');
 
 // Supplier Info
 Route::get('/supplier', [SupplierController::class, 'index'])->name('supplierIndex');
@@ -42,3 +46,12 @@ Route::get('/supplier/new_order/new_order_details', [OrderController::class, 'su
 
 // Supplier Product
 Route::get('/supplier/products', [ProductController::class, 'supplierShowProducts'])->name('supplierShowProducts');
+
+// Admin
+Route::get('/admin/', [AdminController::class, 'showIndex'])->name('adminShowIndex');
+Route::get('/admin/ongoing_order', [AdminController::class, 'showOngoingOrders'])->name('adminOngoingOrders');
+Route::get('/admin/finished_order', [AdminController::class, 'showFinishedOrders'])->name('adminFinishedOrders');
+Route::get('/admin/return_requests', [AdminController::class, 'showReturnRequests'])->name('adminReturnRequests');
+Route::get('/admin/cancellation_requests', [AdminController::class, 'showCancellationRequests'])->name('adminCancellationRequests');
+Route::get('/admin/users', [AdminController::class, 'showUsers'])->name('adminShowUsers');
+

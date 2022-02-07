@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function showProducts(){
-        return view('dropshipperProduct');
+        return view('dropshipperShowProducts');
     }
 
     public function supplierShowProducts(){

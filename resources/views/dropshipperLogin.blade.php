@@ -28,7 +28,16 @@
   <!-- Main content -->
   <div class="main-content">
     <!-- Header -->
-    <div class="header bg-gradient-primary py-7 py-lg-8 pt-lg-9">
+    <div class="header bg-gradient-primary py-7 py-lg-7 pt-lg-7">
+      <div class="container">
+        <div class="header-body text-center mb-7">
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-md-8 px-5">
+              <img src="{{ url('/img/brand/white.png') }}" class="login-logo">
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="separator separator-bottom separator-skew zindex-100">
         <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
@@ -42,7 +51,7 @@
           <div class="card bg-secondary border-0 mb-0">
             <div class="card-body px-lg-5 py-lg-5">
               <div class="text-center text-muted mb-4">
-                <img src="{{ url('/img/brand/logo.png') }}" alt="" srcset="" style="width: 150px; height: 25px;">
+                <h2>Dropshipper Login</h2>
               </div>
               @if(\Session::has('alert'))
                 <div class="alert alert-danger">
