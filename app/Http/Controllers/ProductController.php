@@ -10,4 +10,8 @@ class ProductController extends Controller
     public function showProducts(){
         return view('dropshipperProduct');
     }
+
+    public function supplierShowProducts(){
+        return view('supplier.supplierProducts');
+    }
 }
