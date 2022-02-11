@@ -69,25 +69,25 @@
               <div class="collapse show" id="navbar-order">
                 <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                        <a href="{{route('supplierNewOrders')}}" class="nav-link">New Orders</a>
+                        <a href="{{route('supplierShowNewOrders')}}" class="nav-link">New Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{route('supplierOngoingOrders')}}" class="nav-link">Ongoing Orders</a>
+                        <a href="{{route('supplierShowOngoingOrders')}}" class="nav-link">Ongoing Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{route('supplierFinishedOrders')}}" class="nav-link">Finished Orders</a>
+                        <a href="{{route('supplierShowFinishedOrders')}}" class="nav-link">Finished Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{route('supplierReturnRequests')}}" class="nav-link">Return Requests</a>
+                        <a href="{{route('supplierShowReturnRequests')}}" class="nav-link">Return Requests</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{route('supplierCancellationRequests')}}" class="nav-link">Cancellation Requests</a>
+                        <a href="{{route('supplierShowCancellationRequests')}}" class="nav-link">Cancellation Requests</a>
                     </li>
                 </ul>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('showProducts')}}">
+              <a class="nav-link" href="">
                 <i class="ni ni-tag"></i>
                 <span class="nav-link-text">Reviews</span>
               </a>

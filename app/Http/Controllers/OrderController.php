@@ -26,4 +26,8 @@ class OrderController extends Controller
     public function supplierShowCancellationRequests(){
         return view('supplier.orders.cancellationRequests');
     }
+
+    public function supplierShowNewOrderDetails(){
+        return view('supplier.orders.newOrdersDetail');
+    }
 }

@@ -37,12 +37,12 @@ Route::get('/supplier/edit_profile', [SupplierController::class, 'showEditProfil
 Route::get('/supplier/login', [SupplierController::class, 'showLogin'])->name('supplierShowLogin');
 
 // Supplier Order
-Route::get('/supplier/new_order', [OrderController::class, 'supplierNewOrders'])->name('supplierNewOrders');
-Route::get('/supplier/ongoing_order', [OrderController::class, 'supplierOngoingOrders'])->name('supplierOngoingOrders');
-Route::get('/supplier/finished_order', [OrderController::class, 'supplierFinishedOrders'])->name('supplierFinishedOrders');
-Route::get('/supplier/return_requests', [OrderController::class, 'supplierReturnRequests'])->name('supplierReturnRequests');
-Route::get('/supplier/cancellation_requests', [OrderController::class, 'supplierCancellationRequests'])->name('supplierCancellationRequests');
-Route::get('/supplier/new_order/new_order_details', [OrderController::class, 'supplierShowProducts'])->name('supplierShowProducts');
+Route::get('/supplier/new_order', [OrderController::class, 'supplierShowNewOrders'])->name('supplierShowNewOrders');
+Route::get('/supplier/ongoing_order', [OrderController::class, 'supplierShowOngoingOrders'])->name('supplierShowOngoingOrders');
+Route::get('/supplier/finished_order', [OrderController::class, 'supplierShowFinishedOrders'])->name('supplierShowFinishedOrders');
+Route::get('/supplier/return_requests', [OrderController::class, 'supplierShowReturnRequests'])->name('supplierShowReturnRequests');
+Route::get('/supplier/cancellation_requests', [OrderController::class, 'supplierShowCancellationRequests'])->name('supplierShowCancellationRequests');
+Route::get('/supplier/new_order/new_order_details', [OrderController::class, 'supplierShowNewOrderDetails'])->name('supplierShowNewOrderDetails');
 
 // Supplier Product
 Route::get('/supplier/products', [ProductController::class, 'supplierShowProducts'])->name('supplierShowProducts');

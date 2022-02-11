@@ -54,7 +54,7 @@
                                 <td>Rp 30.000</td>
                                 <td class="text-center">
                                     <div class="text-center">
-                                        <a href="datatables.html#" class="btn btn-sm btn-default">Details</a>
+                                        <a href="{{route('supplierShowNewOrderDetails')}}" class="btn btn-sm btn-default">Details</a>
                                     </div>
                                 </td>
                             </tr>
